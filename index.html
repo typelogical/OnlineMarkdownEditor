@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Markdown to Html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!--<link rel="shortcut icon" href="images_easyphp/easyphp_favicon.ico" />-->
+<!-- Jquery -->
+<script type="text/javascript" src="jquery/js/jquery-2.1.4.min.js"></script>
+<!-- Markdown Jquery Editor -->
+<link rel="stylesheet" type="text/css" href="markitup/markitup/skins/markitup/style.css"/>
+<link rel="stylesheet" type="text/css" href="markitup/markitup/sets/markdown/style.css"/>
+<script type="text/javascript" src="markitup/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="markitup/markitup/sets/markdown/set.js"></script>
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="../bootstrap/assets/bootstrap/css/bootstrap.css"/>
+<script type="text/javascript" src="../bootstrap/assets/bootstrap/js/bootstrap.js"></script>
+
+<!-- Custom Bootsrap -->
+<link rel="stylesheet" type="text/css" href="custom-bootstrap.css"/>
+<script language="javascript">
+	$(document).ready (function() {
+		$('#markdown').markItUp (myMarkdownSettings);
+	});
+</script>
+<script type="text/javascript" src="convert.js"></script>
+
+</head>
+
+<body style="margin:0px;padding:0px;background:#fff;font-family:arial, helvetica, sans-serif;">
+<div style="width:800px;margin:0 auto">
+
+	<div class="container">
+		<h1 class="page-header">Markdown to Html Converter</h1>
+	</div>
+
+	<div class="jumbotron">
+		<h1>Welcome to the Markdown to Html convertor.</h1>
+		<p>Use the online editor to easily and quickly write and convert markdown to html.</p>
+		<p><a class="btn btn-primary btn-lg" href="#markdown" role="button">Start Now</a></p>
+	</div>
+
+	<h3>Markdown Editor</h3>
+	<div class="container">
+		<textarea id="markdown" rows="30">
+		</textarea>
+		<input type="hidden" name="to" value="interpretcode" />
+		<a onclick="testing()"class="btn btn-primary btn-lg right" />Transform</a>
+	</div>
+
+	<br />
+	<span class="label label-primary">Html preview</span>
+	<div class="container" id="rendered">
+	</div>
+	<span class="label label-primary">html code</span>
+	<div class="container">
+		<textarea id="code" ></texarea>
+	</div>
+</div>
+</body>
+</html>
