@@ -1,0 +1,33 @@
+
+/* Bootstrap */
+.jumbotron {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+
+
+
+/* Custom styles */
+#preview {
+	min-height: 500px;
+	padding-left: 30px;
+}
+#code-wrapper {
+
+	min-height: 500px;
+}
+
+#output {
+	
+	min-height: 500px;
+	width: 800px;
+}
+
+.section-header {
+	
+	background-color:#fff;
+	height: auto;
+	text-align: center;
+	border-bottom: 3px solid #000;
+}
